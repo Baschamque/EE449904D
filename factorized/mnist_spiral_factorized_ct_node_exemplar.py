@@ -1,7 +1,8 @@
 """
-This a version of the factorized method. Using the strongest appearance prior we got from the exemplar model, we put this into the factorized CT NODE.
+This a version of the factorized method (Hybrid CT-NODE, the very bottom one). Using the strongest appearance prior we got from the exemplar model, we put this into the factorized CT NODE.
 Basically nothing is made explicitly now, the shape is handled using exemplars and the motion is handled using our CT NODE.
-
+We therefore have two different representations for appearance acnd motion, each with their own priors.
+MSE (pixelwise error) is high, but visually the reconstructions are quite decent, and the motion is well reconstructed too. Again this highlights our previous idea that only optimizing for MSE isn't ideal because it results in blobs.
 """
 
 
